@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .labelling{
+            color: rgb(255, 170, 127);
+            margin: 10px 0;
+            font-size: 35px;
+            font-weight: bolder;}
+        .input_user{
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 30px;
+            margin: 9px 0;}
+        .submit{
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(99, 99, 99);
+            font-weight: bolder;
+            font-size: 12px;
+            margin: 0 3px;
+            cursor: pointer;}
+        .submit:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 5, 6);}
+    </style>
+</head>
+<body style="background-color: rgb(220, 36, 128);">
+    <h1 style="color: rgb(25, 74, 157); font-size: 78px; text-align: center;">Backend Project 1</h1>
+    <form method="post">
+        <h3 style="color: rgb(52, 48, 187); font-size: 35px;">Match your Text to the below Regular Expression</h3>
+        <label class="labelling"><i>Text :-</i></label>
+        <input class="input_user" type="text" id="text_string" name="text_string" placeholder="Enter the Text String here" size="18"><br><br>
+        <label class="labelling"><i>Regular Expression :-</i></label>
+        <input class="input_user" type="text" id="regular_expression" name="regular_expression"
+         placeholder="Enter the regular expression here" size="30"><br><br>
+        <input type="submit" value="CHECK" class="submit">
+        <input type="reset" value="REFRESH" class="submit">
+    </form>
+</body>
+</html>
+    

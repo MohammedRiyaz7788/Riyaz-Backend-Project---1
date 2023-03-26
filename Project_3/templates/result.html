@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regex Matcher Results</title>
+</head>
+
+<body style="background-color: rgb(230, 46, 46);">
+    <h2 style="color: rgb(223, 232, 52); font-size: 108px; text-align: center;">Matches:</h2>
+    {% if matches %}
+    <ul>
+
+        {% for match in matches %}
+        <li style="color: black; font-size: 50px;">{{ match }}</li>
+        {% endfor %}
+    </ul>
+    {% else %} 
+    <p style="color: black; font-size: 35px; text-align: center;">No matches found.</p>
+    <p style="color: black; font-size: 35px; text-align: center;">Go Back To Home Page.</p>
+
+    {% endif %}
+    <a href="" class="home_page" value="home_page" >Go Back</a>
+</body>
+
+</html>
